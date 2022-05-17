@@ -1,0 +1,17 @@
+.tamagotchi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin: 10px 0;
+}
+.characteristic {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
