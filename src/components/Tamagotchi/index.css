@@ -10,9 +10,13 @@
   align-items: center; 
   margin: 10px 0;
 }
-.characteristic {
+.characteristic-button {
   display: flex;
-  justify-content: center;
-  align-items: center; 
+  align-items: stretch; 
+  flex-direction: column;
+}
+.main-button {
+  display: flex;
+  flex-direction: column;
 }
 
