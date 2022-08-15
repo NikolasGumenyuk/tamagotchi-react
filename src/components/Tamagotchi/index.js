@@ -67,7 +67,7 @@ const Tamagotchi = () => {
       clearTimeout(decreaseTimerId);
       clearTimeout(increaseTimerId);
     };
-  }, [isLife, handleKill, playAudio]);
+  }, [isLife]);
 
   const handleCreate = () => {
     setIsLife(true);
