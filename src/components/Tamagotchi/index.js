@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./index.css";
 import img from "../../assets/img/Death.jfif";
 import skeleton from "../../assets/img/skeleton.webp";
-import tango from "../../assets/img/Tango_icon.webp";
 import ReincarnationSound from "../../assets/sound/Reincarnation.mpeg";
 import DeathSound from "../../assets/sound/Death.mpeg";
 import EatSound from "../../assets/sound/Eat.mpeg";
@@ -18,7 +17,6 @@ const Tamagotchi = () => {
   const [hunger, setHunger] = useState(100);
   const [water, setWater] = useState(100);
   const [bladder, setBladder] = useState(0);
-  const [hygiene, setHygiene] = useState(100);
   const [energy, setEnergy] = useState(100);
   const [fun, setFun] = useState(100);
 
@@ -69,7 +67,7 @@ const Tamagotchi = () => {
       clearTimeout(decreaseTimerId);
       clearTimeout(increaseTimerId);
     };
-  }, [isLife]);
+  }, [isLife, handleKill, playAudio]);
 
   const handleCreate = () => {
     setIsLife(true);
